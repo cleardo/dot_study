@@ -1,0 +1,8 @@
+// 图
+digraph G {
+    // 设置图属性
+    // size
+    // 设置全局结点中的字体
+    node[fontsize=24];
+
+}

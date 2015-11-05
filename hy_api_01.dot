@@ -1,0 +1,17 @@
+digraph G {
+    //size = "5, 5";
+
+    node [style=filled color="#5A9AD6" fontcolor="#E7F3FF" fontname="SimSun" shape="circle"];
+    edge [color="#5A9AD6"];
+
+    rankdir = "LR";
+
+    0 [label="日志收集"];
+    1 [label="日志处理"];
+    2 [label="消息队列"];
+    3 [label="展示曲线"];
+
+    0 -> 1 [label="使用脚本解析"];
+    1 -> 2 [label="写入消息队列"];
+    2 -> 3 [label="前端取数据"];
+}

@@ -1,0 +1,59 @@
+digraph G {
+    // 比率 填满
+    ratio=fill;
+    node[fontsize=24];
+    node[style=filled color="#5A9AD6" fontcolor="#E7F3FF" fontname="SimSun" shape="box"];
+
+    main -> run;
+
+    run -> test_module;
+
+    test_module -> module;
+    
+    module -> describe;
+    
+    describe -> it;
+    
+    it -> click;
+
+    click -> check;
+
+    subgraph "cluster_ntest.py" {
+        label="ntest.py";
+
+        test_module;
+
+        describe;
+
+        it;
+
+        check;
+
+    }
+
+    subgraph "cluster_bdd.py" {
+        label="bdd.py";
+
+        click;
+    }
+
+    subgraph "cluster_test.py" {
+        label="test.py";
+        
+        main;
+
+    }
+
+    subgraph "cluster_module.py" {
+        label="项目驱动文件(qg.py)"
+
+        run;
+    }
+
+    subgraph "cluster_test_module.py" {
+        label="test/qg/student";
+
+        module [label="用例模块"];
+    }
+
+}

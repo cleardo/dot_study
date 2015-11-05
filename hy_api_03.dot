@@ -1,0 +1,25 @@
+digraph G {
+    ratio=fill;
+    size="150.5,150.5";
+    compound=true;
+
+    log_dat {label="原始数据"}
+
+    dat_10s {label="10秒数据"}
+
+    log_dat -> dat_10s {label="取数据"}
+
+    subgraph cluster0 {
+        nodesep=.05;
+        rankdir=LR;
+        node [shape=record, width=.1, height=.1];
+
+        node0 [label="<f0> |<f1> |<f2> |<f3> "];
+        node [width=1.5];
+        node1 [label="{<n> appid(1):3次 |<p> }"];
+        node2 [label="{<n> appid(3):5次 |<p> }"]
+
+        node0:f0 -> node1:n;
+        node1:p -> node2:n;
+    }
+}

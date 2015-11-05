@@ -1,0 +1,22 @@
+digraph G {
+    // size = "5, 5";
+    node [style=filled color="#5A9AD6" fontcolor="#E7F3FF" fontname="SimSun"];
+
+    edge [color="#5A9AD6"];
+
+    rankdir = "LR";
+
+    handle_sheet [label="处理sheet表:handle_sheet()"];
+
+    get_share_record [label="提取分享记录"];
+
+    write_to_db [label="写入数据库表"];
+
+    handle_sheet -> get_share_record;
+
+    get_share_record -> write_to_db;
+
+    get_fight_data [label="提取战斗力统计记录"];
+
+    is_date_right [label="是否在统计区间中"];
+}

@@ -1,0 +1,297 @@
+digraph G {
+    size="150.5,150.5"
+    compound=true;
+    subgraph cluster0 {
+        //node [style=filled color="#"]
+        //size="15.5,15.5"
+        //height=15.8
+        rankdir = "TB"
+
+        node [shape=plaintext]
+        //{{{队列数据结构
+        queue_1s [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="2">
+                            <TR>
+                            <TD BGCOLOR="#5A9AD6">              </TD>
+                            </TR>
+                            <TR>
+                            <TD BGCOLOR="#5A9AD6"> 1秒队列 </TD>
+                            </TR>
+                            <TR>
+                            <TD BGCOLOR="#5A9AD6">               </TD></TR>
+                        </TABLE>>];
+
+        queue_1s_01 [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="2">
+                            <TR>
+                            <TD BGCOLOR="#5A9AD6">              </TD>
+                            </TR>
+                            <TR>
+                            <TD BGCOLOR="#5A9AD6"> 1秒队列 </TD>
+                            </TR>
+                            <TR>
+                            <TD BGCOLOR="#5A9AD6">               </TD></TR>
+                        </TABLE>>];
+
+        queue_10s [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="2">
+                            <TR>
+                            <TD BGCOLOR="#5A9AD6">              </TD>
+                            </TR>
+                            <TR>
+                            <TD BGCOLOR="#5A9AD6"> 10秒队列 </TD>
+                            </TR>
+                            <TR>
+                            <TD BGCOLOR="#5A9AD6">               </TD></TR>
+                        </TABLE>>];
+
+        queue_10s_01 [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="2">
+                            <TR>
+                            <TD BGCOLOR="#5A9AD6">              </TD>
+                            </TR>
+                            <TR>
+                            <TD BGCOLOR="#5A9AD6"> 10秒队列 </TD>
+                            </TR>
+                            <TR>
+                            <TD BGCOLOR="#5A9AD6">               </TD></TR>
+                        </TABLE>>];
+
+        queue_1m [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="2">
+                            <TR>
+                            <TD BGCOLOR="#5A9AD6">              </TD>
+                            </TR>
+                            <TR>
+                            <TD BGCOLOR="#5A9AD6"> 1分钟队列 </TD>
+                            </TR>
+                            <TR>
+                            <TD BGCOLOR="#5A9AD6">               </TD>
+                            </TR>
+                        </TABLE>>];
+
+        queue_1m_01 [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="2">
+                            <TR>
+                            <TD BGCOLOR="#5A9AD6">              </TD>
+                            </TR>
+                            <TR>
+                            <TD BGCOLOR="#5A9AD6"> 1分钟队列 </TD>
+                            </TR>
+                            <TR>
+                            <TD BGCOLOR="#5A9AD6">               </TD>
+                            </TR>
+                        </TABLE>>];
+
+        queue_10m [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="2">
+                            <TR>
+                            <TD BGCOLOR="#5A9AD6">              </TD>
+                            </TR>
+                            <TR>
+                            <TD BGCOLOR="#5A9AD6"> 最近10分钟队列 </TD>
+                            </TR>
+                            <TR>
+                            <TD BGCOLOR="#5A9AD6">               </TD></TR>
+                        </TABLE>>];
+
+        queue_10m_01 [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="2">
+                            <TR>
+                            <TD BGCOLOR="#5A9AD6">              </TD>
+                            </TR>
+                            <TR>
+                            <TD BGCOLOR="#5A9AD6"> 最近10分钟队列 </TD>
+                            </TR>
+                            <TR>
+                            <TD BGCOLOR="#5A9AD6">               </TD></TR>
+                        </TABLE>>];
+
+        queue_1h [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="2">
+                            <TR>
+                            <TD BGCOLOR="#5A9AD6">              </TD>
+                            </TR>
+                            <TR>
+                            <TD BGCOLOR="#5A9AD6"> 最近1小时队列 </TD>
+                            </TR>
+                            <TR>
+                            <TD BGCOLOR="#5A9AD6">               </TD>
+                            </TR>
+                        </TABLE>>];
+
+        queue_1h_01 [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="2">
+                            <TR>
+                            <TD BGCOLOR="#5A9AD6">              </TD>
+                            </TR>
+                            <TR>
+                            <TD BGCOLOR="#5A9AD6"> 最近1小时队列 </TD>
+                            </TR>
+                            <TR>
+                            <TD BGCOLOR="#5A9AD6">               </TD>
+                            </TR>
+                        </TABLE>>];
+
+        queue_1d [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="2">
+                            <TR>
+                            <TD BGCOLOR="#5A9AD6">              </TD>
+                            </TR>
+                            <TR>
+                            <TD BGCOLOR="#5A9AD6"> 最近1天队列 </TD>
+                            </TR>
+                            <TR>
+                            <TD BGCOLOR="#5A9AD6">               </TD>
+                            </TR>
+                        </TABLE>>];
+
+        queue_1d_01 [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="2">
+                            <TR>
+                            <TD BGCOLOR="#5A9AD6">              </TD>
+                            </TR>
+                            <TR>
+                            <TD BGCOLOR="#5A9AD6"> 最近1天队列 </TD>
+                            </TR>
+                            <TR>
+                            <TD BGCOLOR="#5A9AD6">               </TD>
+                            </TR>
+                        </TABLE>>];
+
+        //color="#000000", fillcolor="#5A9AD6"
+        queue_1t [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="3">
+                            <TR>
+                            <TD BGCOLOR="#5A9AD6">              </TD>
+                            </TR>
+                            <TR>
+                            <TD BGCOLOR="#5A9AD6"> 最后1次队列 </TD>
+                            </TR>
+                            <TR>
+                            <TD BGCOLOR="#5A9AD6">               </TD>
+                            </TR>
+                        </TABLE>>];
+        queue_10t [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="3">
+                            <TR>
+                            <TD BGCOLOR="#5A9AD6">              </TD>
+                            </TR>
+                            <TR>
+                            <TD BGCOLOR="#5A9AD6"> 最后10次队列 </TD>
+                            </TR>
+                            <TR>
+                            <TD BGCOLOR="#5A9AD6">               </TD>
+                            </TR>
+                        </TABLE>>];
+        queue_100t [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="3">
+                            <TR>
+                            <TD BGCOLOR="#5A9AD6">              </TD>
+                            </TR>
+                            <TR>
+                            <TD BGCOLOR="#5A9AD6"> 最后100次队列 </TD>
+                            </TR>
+                            <TR>
+                            <TD BGCOLOR="#5A9AD6">               </TD>
+                            </TR>
+                        </TABLE>>];
+        queue_1000t [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="3">
+                            <TR>
+                            <TD BGCOLOR="#5A9AD6">              </TD>
+                            </TR>
+                            <TR>
+                            <TD BGCOLOR="#5A9AD6"> 最后1000次队列 </TD>
+                            </TR>
+                            <TR>
+                            <TD BGCOLOR="#5A9AD6">               </TD>
+                            </TR>
+                        </TABLE>>];
+        //}}}
+
+        node [style=filled color="#3498db" fontcolor="#ecf0f1" fontname="SimSun" shape="box"];
+
+        proc [label="消息处理进程"]
+
+        log_record [label="日志消息"]
+
+        get_cnt [label="次数提取例程"]
+
+        get_response_time [label="提取响应时间"]
+
+        get_input_size [label="提取请求流量"]
+
+        get_output_size [label="提取响应数据包大小"]
+
+        log_record -> proc [label="输入: \n url = \"/v1/cloud/appauth/auth\",\n response_code = 404,\n response_time = 23.0, \n input = 5000, output = 3355,\n appid = 3, time = 12333432"]
+
+        //window_slip [label="窗口滑动触发例程"];
+
+        proc -> get_cnt;
+        proc -> get_response_time;
+        proc -> get_input_size;
+        proc -> get_output_size;
+
+        get_cnt -> queue_1s [label="入队，当队列为空时，\n 记录当前记录的时间"];
+        get_cnt -> queue_10s [label="入队"];
+        get_cnt -> queue_1m [label="入队"];
+        get_cnt -> queue_10m [label="入队"];
+        get_cnt -> queue_1h [label="入队"];
+        get_cnt -> queue_1d [label="入队"];
+
+        queue_1s -> queue_1s_01 [label="窗口滑动，\n 每当窗口滑动时\n 计算并发"];
+        queue_10s -> queue_10s_01 [label="窗口滑动"];
+        queue_1m -> queue_1m_01 [label="窗口滑动"];
+        queue_10m -> queue_10m_01 [label="窗口滑动"];
+        queue_1h -> queue_1h_01 [label="窗口滑动"];
+        queue_1d -> queue_1d_01 [label="窗口滑动"];
+
+        get_response_time -> queue_1t;
+        get_response_time -> queue_10t;
+        get_response_time -> queue_100t;
+        get_response_time -> queue_1000t;
+    }
+
+    subgraph cluster1 {
+        label="窗口滑动处理例程，队列存储形式(内存/文件/消息队列/mongo)";
+        node [style=filled color="#5A9AD6" fontcolor="#E7F3FF" fontname="SimSun" shape="box"];
+
+        current_calc [label="计算队列中数据的并发值"];
+
+        get_current_calc [label="累加队列中的数据"];
+
+        cluster1_move_data [label="计算变化量/变化率"];
+
+        current_calc -> get_current_calc [label="返回结果"];
+
+        get_current_calc -> cluster1_move_data [label="移动到上一周期的队列"]
+    }
+
+    subgraph cluster2 {
+        label = "调用次数的窗口滑动处理例程";
+        node [style=filled color="#5A9AD6" fontcolor="#E7F3FF" fontname="SimSun" shape="box"];
+
+        init [label="初始化队列"];
+
+        enter [label="入队时，记住入队时刻时间戳"];
+
+        is_gt_circle [label="是否超过窗口时间周期", shape="diamond"];
+
+        call_cnt [label="入队"];
+
+        //窗口滑动例程
+
+        init -> enter;
+
+        enter -> is_gt_circle;
+
+        is_gt_circle -> call_cnt [label="是"];
+
+        is_gt_circle -> current_calc [label="否", lhead=cluster1];
+    }
+
+    queue_1s -> current_calc [lhead=cluster1, label="窗口滑动"];
+
+    //rankdir = "LR";
+    node [style=filled color="#5A9AD6" fontcolor="#E7F3FF" fontname="SimSun" shape="circle"];
+    edge [color="#5A9AD6"];
+
+    0 [label="日志收集"];
+    2 [label="提取接口调用次数统计结果" fontsize=18, shape=box];
+    3 [label="展示曲线"];
+
+    0 -> log_record [label="使用脚本解析"];
+    queue_1s_01 -> 2 ;
+    queue_10s_01 -> 2 ;
+    queue_1m_01 -> 2 ;
+    queue_10m_01 -> 2 ;
+    queue_1h_01 -> 2 ;
+    queue_1d_01 -> 2 ;
+
+    2 -> 3 [label="前端取数据"];
+}

@@ -1,0 +1,33 @@
+digraph G {
+    size="150.5,150.5"
+
+    node [style=filled color="#3498db" fontcolor="#ecf0f1" fontname="SimSun" shape="box"];
+
+    init_request [label="初始化以下请求信息\nCallAccessToken\nQA专用的CallAppId:12\nStatusCode\n CallUrl\nResponseTime\nRequestSize\nResponseSize\nTerminalCode:1001\nIpAddress\nCallTimestamp"]
+
+    request_api [label="api请求监控日志接口"]
+
+    get_test_info [label="获取测试应用信息"]
+
+    get_api_statics_info [label="从mysql的apicall_statistics表获取字段"]
+
+    compare_info [label="将接口请求信息与数据库信息进行比对\n"]
+
+    mongodb [label="mongo.cloud.oa_accessgrant"]
+
+    get_test_info -> init_request
+
+    mongodb -> init_request [label="通过mongodb获取access token作为\nCallAccessToken的值"]
+
+    init_request -> request_api
+
+    get_api_statics_info -> compare_info
+
+    request_api -> compare_info
+
+//初始化url
+
+//初始化参数
+
+//构造请求
+}
