@@ -14,6 +14,8 @@ digraph G {
 
 	get_test_cases [label="提取每个测试集"];
 
+	run_test_cases [label="运行每个测试集"];
+
 	get_result [label="提取解析结果"];
 
 	send_im [label="发送99U消息"];
@@ -25,6 +27,8 @@ digraph G {
 	run -> set_case_list [label="使用suites.json"];
 
 	run -> get_test_cases;
+
+	get_test_cases -> run_test_cases;
 
 	report -> get_result;
 
