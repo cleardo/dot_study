@@ -22,8 +22,6 @@ digraph G {
 
 	runner -> run;
 
-	get_test_cases -> report;
-
 	run -> set_case_list [label="使用suites.json"];
 
 	run -> get_test_cases;
@@ -33,5 +31,11 @@ digraph G {
 	report -> get_result;
 
 	get_result -> send_im;
+
+	test_runner [label="测试运行器HTMLTestRunner"];
+
+	run_test_cases -> test_runner [label="调用test_runner的run方法"];
+
+	test_runner -> report [label="使用报告文件句柄"];
 
 }
