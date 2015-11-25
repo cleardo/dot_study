@@ -1,0 +1,33 @@
+// 图
+digraph G {
+    // 设置图属性
+    // size
+    // 设置全局结点中的字体
+    node[fontsize=24];
+	runner [label="测试执行runner.py"]
+
+	report [label="生成报告"];
+
+	run [label="执行测试co_test.runner.run()"];
+	
+	set_case_list [label="设置测试集配置"];
+
+	get_test_cases [label="提取每个测试集"];
+
+	get_result [label="提取解析结果"];
+
+	send_im [label="发送99U消息"];
+
+	runner -> run;
+
+	get_test_cases -> report;
+
+	run -> set_case_list [label="使用suites.json"];
+
+	run -> get_test_cases;
+
+	report -> get_result;
+
+	get_result -> send_im;
+
+}

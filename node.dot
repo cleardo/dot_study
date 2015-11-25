@@ -1,0 +1,5 @@
+digraph d {
+	A [label="考试"];
+	B [label="考试"];
+	A -> B;
+}
